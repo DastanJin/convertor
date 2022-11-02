@@ -1,0 +1,22 @@
+<textarea
+  class="center"
+  rows="20"
+  cols="60"
+  name="text"
+  placeholder="Enter BASE64"
+  [(ngModel)]="base64text"
+></textarea>
+
+<div class="card-container">
+  <button class="card" (click)="download()">Download</button>
+
+  <div class="card">
+    <input
+      class="inputfile"
+      type="file"
+      id="file"
+      (change)="upload($event)"
+    />
+    <label for="file">Choose a file</label>
+  </div>
+</div>
